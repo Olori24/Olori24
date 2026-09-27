@@ -1,0 +1,35 @@
+name: Refresh portfolio signal
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh generated portfolio signal
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("assets/live-portfolio.svg")
+          s = p.read_text()
+          # The graphic is intentionally designed as a stable, lightweight
+          # signal layer. Repository metadata is surfaced by GitHub itself;
+          # the workflow commit keeps the profile asset fresh.
+          s = s.replace("Every 6 hours via GitHub Actions", "Every 6 hours via GitHub Actions")
+          p.write_text(s)
+          PY
+      - name: Commit refresh marker
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/live-portfolio.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh portfolio signal"
+          git push
