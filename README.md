@@ -308,7 +308,7 @@ I am interested in collaborating on:
 
 **AI-native products · Agent infrastructure · Automation · SaaS · Developer tools · Operational software · AI product engineering**
 
-If the problem is complicated enough to need a system, **let's build the system.**
+If the problem is complicated enough to need a system, I want to understand the constraints, design the architecture and build the system.
 
 ---
 
@@ -325,20 +325,4 @@ If the problem is complicated enough to need a system, **let's build the system.
 <sub>AI Systems · Automation · Product Engineering</sub>
 
 </div>
-
-
-## Flagship repository order
-
-These six repositories form the primary engineering surface of this profile. The sequence is intentional: autonomous execution → governed infrastructure → real-world operating systems → safety coordination → agent workforce → business automation.
-
-| Repository | Engineering signal |
-|---|---|
-| [AgentStation](https://github.com/Olori24/AgentStation) | Autonomous engineering workspace and artifact execution |
-| [OAE Core](https://github.com/Olori24/oae-core) | Governed control plane, durable jobs and authorization |
-| [NSOS](https://github.com/Olori24/nsos-nigerian-school-operating-system-nigerian-school-operating-system) | Vertical operating system for education |
-| [NSMS](https://github.com/Olori24/NSMS) | Human-controlled safety coordination infrastructure |
-| [AgentStation-Factory](https://github.com/Olori24/AgentStation-Factory) | Multi-agent workforce and artifact synthesis |
-| [Business OS](https://github.com/Olori24/Business-Operating-System-) | Durable workflow automation for business operations |
-
-> **Portfolio rule:** the repositories are the evidence. Claims in this profile are intentionally narrower than the ambition of the projects.
 
