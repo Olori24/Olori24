@@ -1,40 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
-<defs>
-  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#111827"/></linearGradient>
-  <linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
-</defs>
-<rect width="1200" height="560" rx="28" fill="url(#g)"/>
-<rect x="1" y="1" width="1198" height="558" rx="27" fill="none" stroke="#334155"/>
-<text x="60" y="68" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700">ENGINEERING PORTFOLIO • LIVE SIGNAL</text>
-<text x="60" y="98" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="15">Repository activity, proof of work and system direction — refreshed automatically.</text>
-<line x1="60" y1="125" x2="1140" y2="125" stroke="#334155"/>
-<g font-family="Arial,Helvetica,sans-serif">
-<rect x="60" y="155" width="330" height="145" rx="18" fill="#0b1220" stroke="#1e293b"/>
-<text x="84" y="190" fill="#7dd3fc" font-size="13" font-weight="700">FLAGSHIP SYSTEMS</text>
-<text x="84" y="235" fill="#f8fafc" font-size="44" font-weight="800">5</text>
-<text x="84" y="263" fill="#94a3b8" font-size="14">AgentStation • OAE Core • NSOS</text>
-<text x="84" y="285" fill="#94a3b8" font-size="14">NSMS • Business OS</text>
-<rect x="420" y="155" width="330" height="145" rx="18" fill="#0b1220" stroke="#1e293b"/>
-<text x="444" y="190" fill="#c4b5fd" font-size="13" font-weight="700">ENGINEERING DOMAINS</text>
-<text x="444" y="225" fill="#f8fafc" font-size="18" font-weight="700">AI · Automation · SaaS</text>
-<text x="444" y="254" fill="#f8fafc" font-size="18" font-weight="700">Agents · Control Planes</text>
-<text x="444" y="283" fill="#f8fafc" font-size="18" font-weight="700">Operational Systems</text>
-<rect x="780" y="155" width="360" height="145" rx="18" fill="#0b1220" stroke="#1e293b"/>
-<text x="804" y="190" fill="#86efac" font-size="13" font-weight="700">SYSTEM STANDARD</text>
-<text x="804" y="225" fill="#f8fafc" font-size="18" font-weight="700">Plan → Execute → Verify</text>
-<text x="804" y="254" fill="#f8fafc" font-size="18" font-weight="700">Persist → Observe → Recover</text>
-<text x="804" y="283" fill="#f8fafc" font-size="18" font-weight="700">Audit → Human Control</text>
-<text x="60" y="355" fill="#f8fafc" font-size="17" font-weight="700">CURRENT BUILD SURFACE</text>
-<rect x="60" y="380" width="1080" height="7" rx="3" fill="#1e293b"/>
-<rect x="60" y="380" width="820" height="7" rx="3" fill="url(#a)"/>
-<g fill="#cbd5e1" font-size="13">
-<text x="60" y="420">AUTONOMOUS ENGINEERING</text><text x="285" y="420">GOVERNED AI</text><text x="485" y="420">VERTICAL OPS</text><text x="665" y="420">WORKFLOW AUTOMATION</text><text x="925" y="420">OPEN SOURCE</text>
-</g>
-<g fill="#64748b" font-size="12">
-<text x="60" y="475">LIVE DATA SOURCE</text><text x="180" y="475">GitHub repository metadata</text>
-<text x="60" y="500">REFRESH CADENCE</text><text x="180" y="500">Every 6 hours via GitHub Actions</text>
-</g>
-<rect x="60" y="525" width="1080" height="1" fill="#334155"/>
-<text x="60" y="548" fill="#64748b" font-size="11">BOLAJI AKANDE • AI SYSTEMS BUILDER</text>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590">
+<rect width="1200" height="590" rx="28" fill="#0f172a"/>
+<rect x="1" y="1" width="1198" height="588" rx="27" fill="none" stroke="#334155"/>
+<text x="60" y="62" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">ENGINEERING PORTFOLIO • LIVE SIGNAL</text>
+<text x="60" y="91" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="14">Repository activity generated from GitHub metadata • refreshed every 6 hours</text>
+<rect x="60" y="112" width="1080" height="1" fill="#334155"/>
+<text x="60" y="145" fill="#7dd3fc" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">PUBLIC SYSTEMS</text>
+<text x="60" y="166" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800">8</text>
+<text x="170" y="166" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="12">tracked</text>
+<text x="280" y="145" fill="#c4b5fd" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">LATEST ACTIVITY</text>
+<text x="280" y="166" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700">NSOS</text>
+<text x="600" y="145" fill="#86efac" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700">LANGUAGES IN THE PORTFOLIO</text>
+<text x="600" y="166" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">TypeScript • Python • JavaScript</text>
+<rect x="60" y="195" width="520" height="72" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<text x="78" y="218" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">AgentStation</text>
+<text x="78" y="239" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="12">Autonomous engineering workspace • TypeScript</text>
+<text x="78" y="256" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">updated 22 Sep 2026 UTC</text>
+<rect x="610" y="195" width="520" height="72" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<text x="628" y="218" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">AgentStation-Factory</text>
+<text x="628" y="239" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="12">AI workforce platform • TypeScript</text>
+<text x="628" y="256" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">updated 23 Sep 2026 UTC</text>
+<rect x="60" y="285" width="520" height="72" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<text x="78" y="308" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">oae-core</text>
+<text x="78" y="329" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="12">Governed engineering control plane • Python</text>
+<text x="78" y="346" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">updated 23 Sep 2026 UTC</text>
+<rect x="610" y="285" width="520" height="72" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<text x="628" y="308" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">NSOS</text>
+<text x="628" y="329" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="12">School operating system • TypeScript</text>
+<text x="628" y="346" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">updated 27 Sep 2026 UTC</text>
+<rect x="60" y="375" width="520" height="72" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<text x="78" y="398" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">NSMS</text>
+<text x="78" y="419" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="12">Neighbourhood safety coordination • JavaScript</text>
+<text x="78" y="436" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">updated 26 Sep 2026 UTC</text>
+<rect x="610" y="375" width="520" height="72" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<text x="628" y="398" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">Business-Operating-System-</text>
+<text x="628" y="419" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="12">Business operating layer • JavaScript</text>
+<text x="628" y="436" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">updated 14 Sep 2026 UTC</text>
+<rect x="60" y="485" width="1080" height="1" fill="#334155"/>
+<text x="60" y="512" fill="#cbd5e1" font-family="Arial,Helvetica,sans-serif" font-size="13">SYSTEM DIRECTION</text>
+<text x="60" y="539" fill="#f8fafc" font-family="Arial,Helvetica,sans-serif" font-size="15">Autonomous Engineering • Governed AI • Vertical Operating Systems • Durable Automation</text>
+<text x="60" y="568" fill="#64748b" font-family="Arial,Helvetica,sans-serif" font-size="11">Last observed repository update: 27 Sep 2026 UTC</text>
 </svg>
