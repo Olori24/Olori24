@@ -98,7 +98,7 @@ Replacing repetitive manual work with measurable, durable workflows.
 
 ---
 
-# 🚀 Flagship systems
+# 🚀 Selected engineering systems
 
 ## AgentStation
 ### Mission → Software Artifact
@@ -285,6 +285,34 @@ Turning reusable infrastructure into products for **schools, businesses, communi
 Using AI where it creates leverage — while keeping workflows **measurable, inspectable and recoverable**.
 
 ---
+
+---
+
+# 🧪 How I work
+
+I treat an AI product as an engineering system, not a prompt wrapper.
+
+| Stage | Engineering focus |
+|---|---|
+| **Understand** | Repository state, users, constraints, permissions and failure modes |
+| **Design** | Boundaries, data flow, contracts and recovery paths |
+| **Build** | Small, testable changes with explicit ownership |
+| **Execute** | Agents and workflows operate through scoped tools |
+| **Verify** | Tests, type checks, runtime checks and observable evidence |
+| **Operate** | Persistence, retries, logs, audit trails and deployment health |
+| **Improve** | Use failures and real usage to tighten the system |
+
+### Engineering proof
+
+This portfolio favors **source, architecture, tests and operational evidence** over vanity counters.
+
+- **Source:** production-oriented application and infrastructure code
+- **Architecture:** system diagrams and explicit service boundaries
+- **Quality:** CI, tests, type checks and validation workflows where implemented
+- **Security:** tenant isolation, authorization, secret boundaries and human-approval controls
+- **Operations:** durable jobs, retries, observability and audit patterns where required
+- **Product:** real operational domains rather than disconnected demo screens
+
 
 # 🌍 More work
 
