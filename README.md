@@ -2,9 +2,9 @@
 
 # BOLAJI AKANDE
 
-### AI Systems Builder · Automation Engineer · Product Builder
+### AI Systems Builder · Automation Engineer · Product Engineer
 
-**I build AI-powered systems that turn complex workflows into usable, governed software.**
+**I design and build AI-native software that can plan, execute, verify and operate real workflows.**
 
 <p>
   <a href="https://github.com/Olori24/AgentStation">AgentStation</a> ·
@@ -14,140 +14,83 @@
   <a href="https://github.com/Olori24/Business-Operating-System-">Business OS</a>
 </p>
 
-![AI Systems](https://img.shields.io/badge/AI%20SYSTEMS-Builder-111827?style=flat-square)
-![Automation](https://img.shields.io/badge/AUTOMATION-Engineering-111827?style=flat-square)
-![Product](https://img.shields.io/badge/PRODUCT-Engineering-111827?style=flat-square)
-![Open Source](https://img.shields.io/badge/BUILDING-In%20Public-111827?style=flat-square)
+![AI Systems](https://img.shields.io/badge/AI%20SYSTEMS-ENGINEERING-0f172a?style=flat-square)
+![Agents](https://img.shields.io/badge/AGENTS-AUTONOMOUS%20WORKFLOWS-0f172a?style=flat-square)
+![Automation](https://img.shields.io/badge/AUTOMATION-DURABLE%20EXECUTION-0f172a?style=flat-square)
+![Open Source](https://img.shields.io/badge/BUILDING-IN%20PUBLIC-0f172a?style=flat-square)
 
 </div>
 
 ---
 
-## ⚡ The Short Version
+<p align="center">
+  <img src="./assets/portfolio-map.svg" alt="Portfolio systems map" width="900">
+</p>
 
-I build at the intersection of:
+## ⚡ The 10-second version
 
-**AI agents + software engineering + workflow automation + real-world operations**
+I build **systems around intelligence**, not just chat interfaces.
 
-My work is less about putting a chatbot on a product and more about building the **system around intelligence**:
+My work sits at the intersection of:
 
-> **Intent → Context → Planning → Execution → Verification → Audit → Outcome**
+**AI agents · software engineering · workflow automation · operational software · developer infrastructure**
 
-The objective is software that can **do useful work**, while remaining observable, recoverable, and under appropriate human control.
+The recurring architecture is:
 
-<p align="center"><img src="./assets/portfolio-map.svg" alt="Portfolio systems map" width="900"></p>
+> **Intent → Context → Plan → Execute → Verify → Persist → Observe → Recover → Audit → Outcome**
+
+The goal is simple: **make complex work executable without making the system uncontrollable.**
 
 ---
 
-## 🧩 Flagship Portfolio
+<p align="center">
+  <img src="./assets/live-portfolio.svg" alt="Live engineering portfolio signal" width="900">
+</p>
+
+> **Portfolio principle:** no badge wall, no inflated metrics, no decorative claims. The repositories are the proof.
+
+---
+
+## 🧠 What I actually build
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🚀 AgentStation
+### 01 · Autonomous Engineering
 
-**Mission → Software Artifact**
+Systems that turn a mission into a sequence of engineering tasks, coordinate specialist agents, produce artifacts and verify the result.
 
-An autonomous engineering workspace built around coordinated specialist agents.
-
-**Focus**
-- Mission decomposition
-- Multi-agent execution
-- Full-stack artifact generation
-- Verification workflows
-- Developer workspace
-
-<a href="https://github.com/Olori24/AgentStation">Explore AgentStation →</a>
+**Keywords:** agent orchestration · planning · code generation · sandboxing · QA · artifact synthesis
 
 </td>
 <td width="50%" valign="top">
 
-### 🧭 OAE Core
+### 02 · Governed AI Infrastructure
 
-**Control → Governed Execution**
+Control-plane primitives that answer the hard questions around intelligent execution.
 
-A governed engineering control plane for repositories, workspaces, jobs, and controlled execution.
-
-**Focus**
-- Authorization
-- Workspace lifecycle
-- Durable jobs
-- Repository foundations
-- Auditability
-
-<a href="https://github.com/Olori24/oae-core">Explore OAE Core →</a>
+**Keywords:** authorization · jobs · persistence · audit · observability · tenant boundaries · recovery
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-### 🏫 NSOS
+### 03 · Vertical Operating Systems
 
-**School → Operating System**
+Reusable infrastructure patterns applied to real operational environments rather than toy demos.
 
-A Nigeria-first operating system for schools and learning institutions.
-
-**Focus**
-- Institutional workflows
-- Multi-tenant operations
-- People & learning
-- Communication
-- Payments and administration
-
-<a href="https://github.com/Olori24/nsos-nigerian-school-operating-system-nigerian-school-operating-system">Explore NSOS →</a>
+**Keywords:** schools · businesses · communities · workflows · notifications · evidence
 
 </td>
 <td width="50%" valign="top">
 
-### 🛡️ NSMS
+### 04 · Practical Automation
 
-**Incident → Coordination → Response**
+Replacing repetitive manual work with measurable, durable workflows.
 
-A community safety coordination platform connecting residents, operators, and authorized responders.
-
-**Focus**
-- Incident coordination
-- Evidence workflows
-- Notifications
-- Audit trails
-- Human-controlled AI assistance
-
-<a href="https://github.com/Olori24/NSMS">Explore NSMS →</a>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 🏢 Business OS
-
-**Workflow → Operations**
-
-A programmable operating layer for modern business workflows and integrations.
-
-**Focus**
-- Durable workflows
-- Integrations
-- Notifications
-- Operational dashboards
-- Multi-tenant SaaS foundations
-
-<a href="https://github.com/Olori24/Business-Operating-System-">Explore Business OS →</a>
-
-</td>
-<td width="50%" valign="top">
-
-### 🔭 The Bigger Picture
-
-These projects are not isolated experiments.
-
-They are different applications of the same engineering direction:
-
-**Build infrastructure that lets people and intelligent software work together reliably.**
+**Keywords:** integrations · APIs · automation · data flows · human approval · operational dashboards
 
 </td>
 </tr>
@@ -155,132 +98,199 @@ They are different applications of the same engineering direction:
 
 ---
 
-<p align="center"><img src="./assets/ai-systems-architecture.svg" alt="AI systems architecture" width="900"></p>
+# 🚀 Flagship systems
 
-## 🏗️ The Architecture
+## AgentStation
+### Mission → Software Artifact
 
-~~~text
-                         ┌────────────────────┐
-                         │    HUMAN / GOAL    │
-                         └─────────┬──────────┘
-                                   │
-                                   ▼
-                         ┌────────────────────┐
-                         │ CONTEXT + INTENT   │
-                         └─────────┬──────────┘
-                                   │
-                                   ▼
-                         ┌────────────────────┐
-                         │ PLAN / DECOMPOSE   │
-                         └─────────┬──────────┘
-                                   │
-                                   ▼
-                    ┌──────────────────────────────┐
-                    │     SPECIALIST EXECUTION     │
-                    │                              │
-                    │  Architect · Builder · QA    │
-                    │  Research · Ops · Automation │
-                    └──────────────┬───────────────┘
-                                   │
-                                   ▼
-                         ┌────────────────────┐
-                         │ EXECUTE + VERIFY   │
-                         └─────────┬──────────┘
-                                   │
-                                   ▼
-                         ┌────────────────────┐
-                         │ AUDIT + PERSIST    │
-                         └─────────┬──────────┘
-                                   │
-                                   ▼
-                         ┌────────────────────┐
-                         │   USEFUL OUTCOME   │
-                         └────────────────────┘
-~~~
+An autonomous engineering workspace built around coordinated specialist agents.
 
-### Why this matters
+**Engineering surface**
+- Mission decomposition
+- Multi-agent orchestration
+- Full-stack artifact generation
+- In-browser development workspace
+- Verification and QA workflows
+- Developer-facing execution
 
-**AI is only one layer.**
-
-The hard engineering work is everything around it:
-
-- state
-- permissions
-- persistence
-- retries
-- verification
-- observability
-- tenant boundaries
-- human approval
-- evidence
-- failure recovery
-
-That is where I focus.
+**Repository:** <a href="https://github.com/Olori24/AgentStation">Olori24/AgentStation →</a>
 
 ---
 
-## 🧠 Engineering Principles
+## OAE Core
+### Control → Governed Execution
 
-| Principle | What it means |
+A governed engineering control plane for repositories, workspaces, jobs and controlled execution.
+
+**Engineering surface**
+- Authorization boundaries
+- Workspace lifecycle
+- Durable job delivery
+- Repository foundations
+- Controlled build execution
+- Auditability
+
+**Repository:** <a href="https://github.com/Olori24/oae-core">Olori24/oae-core →</a>
+
+---
+
+## NSOS
+### Institution → Operating System
+
+A Nigeria-first operating system for schools and learning institutions, designed around one controlled workspace for institutional operations.
+
+**Engineering surface**
+- Multi-tenant architecture
+- People and learning workflows
+- Administration
+- Communication
+- Payments
+- Supervised AI
+
+**Repository:** <a href="https://github.com/Olori24/nsos-nigerian-school-operating-system-nigerian-school-operating-system">Olori24/NSOS →</a>
+
+---
+
+## NSMS
+### Incident → Coordination → Response
+
+A neighbourhood safety coordination platform connecting residents, operators and authorized responders.
+
+**Engineering surface**
+- Multi-tenant incident management
+- Evidence workflows
+- Notifications
+- Incident timelines
+- Audit trails
+- Human-controlled AI assistance
+
+**Repository:** <a href="https://github.com/Olori24/NSMS">Olori24/NSMS →</a>
+
+---
+
+## Business OS
+### Workflow → Operations
+
+A programmable operating layer for modern businesses.
+
+**Engineering surface**
+- Durable workflows
+- Integrations
+- Notifications
+- Operational dashboards
+- Multi-tenant SaaS foundations
+
+**Repository:** <a href="https://github.com/Olori24/Business-Operating-System-">Olori24/Business-Operating-System- →</a>
+
+---
+
+## 🔬 The portfolio is a system
+
+These projects are deliberately connected.
+
+**AgentStation** explores autonomous execution.  
+**OAE Core** explores governance and control.  
+**NSOS, NSMS and Business OS** apply those primitives to real operational domains.
+
+Together:
+
+```text
+                    HUMAN GOAL
+                        │
+                        ▼
+                 ┌─────────────┐
+                 │   CONTEXT   │
+                 └──────┬──────┘
+                        │
+                        ▼
+                 ┌─────────────┐
+                 │    PLAN     │
+                 └──────┬──────┘
+                        │
+             ┌──────────┴──────────┐
+             ▼                     ▼
+       SPECIALIST AGENTS      WORKFLOW ENGINE
+             │                     │
+             └──────────┬──────────┘
+                        ▼
+                 ┌─────────────┐
+                 │   EXECUTE   │
+                 └──────┬──────┘
+                        ▼
+                 ┌─────────────┐
+                 │   VERIFY    │
+                 └──────┬──────┘
+                        ▼
+              PERSIST · OBSERVE · AUDIT
+                        │
+                        ▼
+                 USEFUL OUTCOME
+```
+
+<p align="center">
+  <img src="./assets/ai-systems-architecture.svg" alt="AI systems architecture" width="900">
+</p>
+
+---
+
+# 🧱 Engineering doctrine
+
+| Principle | Implementation mindset |
 |---|---|
-| **Human authority** | Automation should expand capability without silently taking decisions that belong to people. |
-| **Evidence before claims** | Systems should show what happened, what was verified, and what remains uncertain. |
-| **Durable execution** | Important work should survive retries, failures, restarts, and partial completion. |
-| **Secure boundaries** | Permissions, tenant isolation, secrets, and auditability belong in the architecture. |
-| **Verification is completion** | Generated does not automatically mean done. Build, test, inspect, verify. |
-| **AI with boundaries** | Intelligent assistance should operate within explicit authority and safety constraints. |
+| **Human authority** | Automation expands capability; it does not silently take authority that belongs to people. |
+| **Evidence before claims** | Prefer observable state, test results, audit records and reproducible outputs. |
+| **Durable execution** | Important work should survive retries, restarts, failures and partial completion. |
+| **Secure boundaries** | Permissions, tenant isolation and secrets belong in the architecture. |
+| **Verification is completion** | Generated is not the same as finished. Build, test, inspect and verify. |
+| **AI with boundaries** | Agents operate inside explicit scopes, tools and approval rules. |
 
 ---
 
-## 🛠️ Technology
+# 🛠️ Technical surface
 
 <div align="center">
 
-**LANGUAGES & RUNTIME**
+### Languages & runtime
 
-TypeScript · JavaScript · Python · Node.js
+**TypeScript · JavaScript · Python · Node.js**
 
-**WEB & BACKEND**
+### Application engineering
 
-React · Next.js · FastAPI · Express · PostgreSQL · SQLite
+**React · Next.js · FastAPI · Express · PostgreSQL · SQLite**
 
-**INFRASTRUCTURE**
+### Infrastructure
 
-Docker · GitHub Actions · REST APIs · Cloud Deployment
+**Docker · GitHub Actions · REST APIs · Cloud Deployment**
 
-**AI & AUTOMATION**
+### AI & automation
 
-LLM APIs · AI Agents · Workflow Automation · RAG · OCR
+**LLM APIs · AI Agents · RAG · OCR · Workflow Automation · Tool Calling**
 
 </div>
 
 ---
 
-## 🔬 Current Build Direction
+# 📡 Current build direction
 
-### 01 — Autonomous Engineering
+### 01 — Autonomous engineering
+Moving from systems that **answer** toward systems that **execute multi-step missions and produce verifiable artifacts**.
 
-Moving from AI that **answers questions** toward systems that can **execute multi-step engineering missions** and produce verifiable artifacts.
+### 02 — Governed AI infrastructure
+Building the control layer around **authorization, execution, persistence, observability and auditability**.
 
-### 02 — Governed AI Infrastructure
+### 03 — Vertical operating systems
+Turning reusable infrastructure into products for **schools, businesses, communities and other operational environments**.
 
-Building control-plane primitives around authorization, execution, persistence, observability, and auditability.
-
-### 03 — Vertical Operating Systems
-
-Applying reusable infrastructure patterns to schools, businesses, communities, and other operational environments.
-
-### 04 — Practical Automation
-
-Replacing repetitive manual processes with measurable workflows instead of adding AI simply because AI is available.
+### 04 — Practical automation
+Using AI where it creates leverage — while keeping workflows **measurable, inspectable and recoverable**.
 
 ---
 
-## 📦 More Work
+# 🌍 More work
 
-The portfolio also includes work around:
+The wider portfolio includes:
 
-- AI opportunity discovery
+- AI opportunity intelligence for Africa
 - Sales automation
 - Business workflow systems
 - AI workforce infrastructure
@@ -288,18 +298,17 @@ The portfolio also includes work around:
 - Data and analytics workflows
 - Africa-focused digital products
 
-**Browse the repositories:**  
-<a href="https://github.com/Olori24?tab=repositories">github.com/Olori24 →</a>
+<a href="https://github.com/Olori24?tab=repositories">Explore all repositories →</a>
 
 ---
 
-## 🤝 Open to Building
+# 🤝 Open to building
 
 I am interested in collaborating on:
 
 **AI-native products · Agent infrastructure · Automation · SaaS · Developer tools · Operational software · AI product engineering**
 
-If the problem involves turning a complicated workflow into a system that can actually run, **let's build it.**
+If the problem is complicated enough to need a system, **let's build the system.**
 
 ---
 
@@ -309,7 +318,7 @@ If the problem involves turning a complicated workflow into a system that can ac
 ### AUTOMATE THE WORK.
 ### KEEP HUMANS IN CONTROL.
 
-<br/>
+<br>
 
 **Bolaji Akande**
 
