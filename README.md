@@ -35,6 +35,8 @@ My work is less about putting a chatbot on a product and more about building the
 
 The objective is software that can **do useful work**, while remaining observable, recoverable, and under appropriate human control.
 
+<p align="center"><img src="./assets/portfolio-map.svg" alt="Portfolio systems map" width="900"></p>
+
 ---
 
 ## 🧩 Flagship Portfolio
@@ -152,6 +154,8 @@ They are different applications of the same engineering direction:
 </table>
 
 ---
+
+<p align="center"><img src="./assets/ai-systems-architecture.svg" alt="AI systems architecture" width="900"></p>
 
 ## 🏗️ The Architecture
 
