@@ -7,10 +7,10 @@
 **I design and build AI-native software that can plan, execute, verify and operate real workflows.**
 
 <p>
-  <a href="https://github.com/Olori24/AgentStation">AgentStation</a> ·
   <a href="https://github.com/Olori24/oae-core">OAE Core</a> ·
   <a href="https://github.com/Olori24/nsos-nigerian-school-operating-system-nigerian-school-operating-system">NSOS</a> ·
-  <a href="https://github.com/Olori24/NSMS">NSMS</a> ·
+  <a href="https://github.com/Olori24/Ai-Clinic-Management-System">ClinicOS</a> ·
+  <a href="https://github.com/Olori24/AgentStation-Factory">AgentStation Factory</a> ·
   <a href="https://github.com/Olori24/Business-Operating-System-">Business OS</a>
 </p>
 
@@ -184,13 +184,136 @@ A programmable operating layer for modern businesses.
 
 ---
 
+**Repository:** <a href="https://github.com/Olori24/Business-Operating-System-">Olori24/Business-Operating-System- →</a>
+
+---
+
+## 💎 Portfolio value snapshot
+
+This is an **engineering/IP replacement-value estimate**, not a claimed market valuation or revenue figure. The ranges reflect current repository scope, architecture, product depth, security maturity and likely rebuild cost.
+
+| System | Estimated IP / replacement value | Position |
+|---|---:|---|
+| **NSOS** | **$80k–$150k** | Education operating system |
+| **OAE Core** | **$75k–$150k** | Governed AI engineering infrastructure |
+| **ClinicOS** | **$50k–$100k** | Healthcare operating system |
+| **Business OS** | **$35k–$70k** | Business automation platform |
+| **Samura Estate** | **$35k–$75k** | Property intelligence + CRM |
+| **AgentStation Factory** | **$30k–$65k** | Autonomous AI workforce platform |
+| **NSMS** | **$20k–$45k** | Community safety operations |
+| **AgentStation** | **$12k–$25k** | Autonomous engineering workspace |
+| **Opportunity Radar Africa** | **$12k–$25k** | African opportunity intelligence |
+
+**Indicative combined replacement/IP range for the major systems: $349k–$705k.**
+
+> **Important:** code value is not company value. Customers, recurring revenue, retention, proprietary data, distribution and defensibility can move the commercial valuation dramatically higher or lower.
+
+---
+
+## 🏗️ The portfolio architecture
+
+The portfolio is no longer best understood as a list of unrelated repositories. It is an emerging stack:
+
+**OAE Core → AgentStation → AgentStation Factory → Vertical Operating Systems**
+
+The shared thesis is:
+
+> **Human goal → context → plan → execute → verify → persist → observe → recover → audit → outcome**
+
+This creates a reusable foundation for building AI-native operational software across different industries.
+
+---
+
+## AgentStation Factory
+### Agents → Workforce → Outcome
+
+The next-generation AgentStation platform for coordinated AI workforces and autonomous execution.
+
+**Engineering surface**
+- Multi-agent orchestration
+- Durable autonomous execution
+- AgentRouter integration
+- Skill and tool registries
+- Sandboxed workspaces
+- Objective templates
+- Growth/workforce automation
+- Mission artifacts and verification
+- Premium command-center UI
+
+**Repository:** <a href="https://github.com/Olori24/AgentStation-Factory">Olori24/AgentStation-Factory →</a>
+
+---
+
+## ClinicOS
+### Healthcare → Operations → Intelligence
+
+An AI-powered clinic management system designed around real clinical and administrative workflows.
+
+**Engineering surface**
+- Patient records
+- Encounters and appointments
+- Laboratory and pharmacy
+- Billing and receipts
+- Inventory and procurement
+- Staff and branch administration
+- RBAC and audit logs
+- MFA and account security
+- AI-assisted workflows
+- Production-readiness evidence
+
+**Repository:** <a href="https://github.com/Olori24/Ai-Clinic-Management-System">Olori24/Ai-Clinic-Management-System →</a>
+
+---
+
+## Samura Estate
+### Property Data → Intelligence → Transactions
+
+A property intelligence and real-estate operations platform.
+
+**Engineering surface**
+- Property intelligence
+- Provider abstraction
+- Verification and freshness
+- Property matching
+- Listings and marketplace workflows
+- Leads and CRM
+- Follow-ups
+- Scheduled synchronization
+- API foundations
+
+**Repository:** <a href="https://github.com/Olori24/samura-estate">Olori24/samura-estate →</a>
+
+---
+
+## Opportunity Radar Africa
+### Discover → Qualify → Recommend
+
+An African opportunity-intelligence platform for grants, tenders, procurement, scholarships, fellowships and funding opportunities.
+
+**Engineering surface**
+- Multi-source ingestion
+- Source trust
+- Deduplication
+- Opportunity scoring
+- Ranking
+- Recommendations
+- Explainable intelligence
+- Adversarial testing
+
+**Repository:** <a href="https://github.com/Olori24/opportunity-radar-africa">Olori24/opportunity-radar-africa →</a>
+
+---
+
+
 ## 🔬 The portfolio is a system
 
 These projects are deliberately connected.
 
-**AgentStation** explores autonomous execution.  
-**OAE Core** explores governance and control.  
-**NSOS, NSMS and Business OS** apply those primitives to real operational domains.
+**OAE Core** provides governed execution primitives.  
+**AgentStation** turns those primitives into an autonomous engineering workspace.  
+**AgentStation Factory** extends the model into coordinated AI workforces.  
+**NSOS, ClinicOS, Business OS, NSMS and Samura Estate** apply the architecture to real operational domains.  
+**Opportunity Radar Africa** demonstrates the intelligence layer for structured opportunity discovery.
 
 Together:
 
@@ -314,19 +437,43 @@ This portfolio favors **source, architecture, tests and operational evidence** o
 - **Product:** real operational domains rather than disconnected demo screens
 
 
-# 🌍 More work
+# 🌍 Portfolio map
 
-The wider portfolio includes:
+### Core infrastructure
+- **OAE Core** — governed AI execution
+- **AgentStation** — autonomous engineering workspace
+- **AgentStation Factory** — multi-agent AI workforce
 
-- AI opportunity intelligence for Africa
-- Sales automation
-- Business workflow systems
-- AI workforce infrastructure
-- Developer tooling
-- Data and analytics workflows
-- Africa-focused digital products
+### Vertical operating systems
+- **NSOS** — education
+- **ClinicOS** — healthcare
+- **Business OS** — business operations
+- **NSMS** — community safety
+- **Samura Estate** — property intelligence
+
+### Intelligence & automation
+- **Opportunity Radar Africa** — opportunity intelligence
+- **Olórí-oko** — sales automation experiments
+- AI engineering and developer tooling
+- Data and workflow automation
+
+This portfolio is intentionally **Africa-aware, AI-native and operations-first**.
 
 <a href="https://github.com/Olori24?tab=repositories">Explore all repositories →</a>
+
+---
+
+# 🎯 What makes this portfolio different
+
+I am not building isolated AI demos.
+
+I am building **operating infrastructure for work**.
+
+The common design question across the portfolio is:
+
+> **How can software use intelligence to perform useful work while remaining observable, secure, recoverable and accountable?**
+
+That means the portfolio is optimized for **real operations**, not impressive screenshots alone.
 
 ---
 
