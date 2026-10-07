@@ -340,7 +340,57 @@ const answers=[
  [/agent|ai/i,"AgentStation and AgentStation Factory explore coordinated AI workforces, specialist agents, tool registries, artifacts, sandboxed workspaces and durable execution."],
  [/stack|technology|tech/i,"The core technical surface includes TypeScript, JavaScript, Python, React, Next.js, Node.js, FastAPI, Express, PostgreSQL, SQLite, Docker, GitHub Actions, AI agents, RAG and tool calling."]
 ];
-function answerQuestion(q){const hit=answers.find(([re])=>re.test(q));return hit?hit[1]:"The portfolio is focused on AI-native systems, automation and product engineering. Try asking about OAE, ClinicOS, NSOS, AgentStation, engineering evidence or the technical stack."}
+const assistantLocales={
+en:{
+health:"ClinicOS is the strongest healthcare example: a multi-tenant clinic operating system covering clinical workflows, laboratory, pharmacy, billing, inventory, staff, security and audit. Its latest verified baseline reached 603+ tests, 41 real Chromium E2E tests and 21/21 smoke checks.",
+oae:"OAE Core is the flagship infrastructure project. Its thesis is governed autonomous software engineering: understand intent, inspect context, plan, execute through controlled tools, verify results and preserve evidence while keeping humans in control.",
+evidence:"The portfolio documents 603+ ClinicOS tests, 41 real Chromium E2E tests and 21/21 smoke checks, alongside production repositories, build history and explicit verification practices.",
+school:"NSOS is the Nigeria-first school operating system. It brings administration, learning, communication, payments and AI assistance into one operational layer for learning institutions.",
+agent:"AgentStation and AgentStation Factory explore coordinated AI workforces, specialist agents, tool registries, artifacts, sandboxed workspaces and durable execution.",
+stack:"The core technical surface includes TypeScript, JavaScript, Python, React, Next.js, Node.js, FastAPI, Express, PostgreSQL, SQLite, Docker, GitHub Actions, AI agents, RAG and tool calling.",
+fallback:"The portfolio is focused on AI-native systems, automation and product engineering. Try asking about OAE, ClinicOS, NSOS, AgentStation, engineering evidence or the technical stack."
+},
+fr:{
+health:"ClinicOS est l’exemple principal dans la santé : un système clinique multi-tenant couvrant les workflows cliniques, le laboratoire, la pharmacie, la facturation, l’inventaire, le personnel, la sécurité et l’audit. Sa base vérifiée atteint 603+ tests, 41 tests E2E Chromium réels et 21/21 contrôles smoke.",
+oae:"OAE Core est le projet d’infrastructure phare. Sa thèse est une ingénierie logicielle autonome gouvernée : comprendre l’intention, examiner le contexte, planifier, exécuter avec des outils contrôlés, vérifier les résultats et conserver les preuves sous contrôle humain.",
+evidence:"Le portfolio documente 603+ tests ClinicOS, 41 tests E2E Chromium réels et 21/21 contrôles smoke, avec dépôts de production, historique de construction et pratiques explicites de vérification.",
+school:"NSOS est le système d’exploitation scolaire conçu d’abord pour le Nigeria. Il réunit administration, apprentissage, communication, paiements et assistance IA dans une couche opérationnelle.",
+agent:"AgentStation et AgentStation Factory explorent des équipes d’IA coordonnées, des agents spécialisés, des registres d’outils, des artefacts, des espaces isolés et une exécution durable.",
+stack:"La surface technique comprend TypeScript, JavaScript, Python, React, Next.js, Node.js, FastAPI, Express, PostgreSQL, SQLite, Docker, GitHub Actions, agents IA, RAG et tool calling.",
+fallback:"Le portfolio se concentre sur les systèmes natifs de l’IA, l’automatisation et l’ingénierie produit. Essayez OAE, ClinicOS, NSOS, AgentStation, les preuves d’ingénierie ou la stack technique."
+},
+it:{
+health:"ClinicOS è il principale esempio nel settore sanitario: un sistema clinico multi-tenant per workflow clinici, laboratorio, farmacia, fatturazione, inventario, personale, sicurezza e audit. La base verificata raggiunge oltre 603 test, 41 test E2E reali con Chromium e 21/21 smoke check.",
+oae:"OAE Core è il progetto infrastrutturale principale. La sua tesi è l’ingegneria software autonoma governata: comprendere l’intento, esaminare il contesto, pianificare, eseguire tramite strumenti controllati, verificare i risultati e conservare le evidenze mantenendo il controllo umano.",
+evidence:"Il portfolio documenta oltre 603 test ClinicOS, 41 test E2E reali con Chromium e 21/21 smoke check, insieme a repository di produzione, cronologia di sviluppo e pratiche di verifica.",
+school:"NSOS è il sistema operativo scolastico pensato prima di tutto per la Nigeria. Riunisce amministrazione, apprendimento, comunicazione, pagamenti e assistenza IA.",
+agent:"AgentStation e AgentStation Factory esplorano team IA coordinati, agenti specializzati, registri di strumenti, artefatti, workspace isolati ed esecuzione durevole.",
+stack:"Lo stack tecnico comprende TypeScript, JavaScript, Python, React, Next.js, Node.js, FastAPI, Express, PostgreSQL, SQLite, Docker, GitHub Actions, agenti IA, RAG e tool calling.",
+fallback:"Il portfolio si concentra su sistemi nativi dell’IA, automazione e ingegneria di prodotto. Prova a chiedere di OAE, ClinicOS, NSOS, AgentStation, evidenze o stack tecnico."
+},
+de:{
+health:"ClinicOS ist das stärkste Beispiel im Gesundheitsbereich: ein mandantenfähiges Klinikbetriebssystem für klinische Workflows, Labor, Apotheke, Abrechnung, Inventar, Personal, Sicherheit und Audit. Die verifizierte Basis umfasst 603+ Tests, 41 echte Chromium-E2E-Tests und 21/21 Smoke Checks.",
+oae:"OAE Core ist das zentrale Infrastrukturprojekt. Die These: gesteuerte autonome Softwareentwicklung durch Intent-Verständnis, Kontextprüfung, Planung, kontrollierte Tool-Ausführung, Verifizierung und Beweissicherung bei menschlicher Kontrolle.",
+evidence:"Das Portfolio dokumentiert 603+ ClinicOS-Tests, 41 echte Chromium-E2E-Tests und 21/21 Smoke Checks sowie Produktions-Repositories, Entwicklungsverlauf und explizite Verifizierung.",
+school:"NSOS ist das zuerst für Nigeria entwickelte Schulbetriebssystem. Es verbindet Verwaltung, Lernen, Kommunikation, Zahlungen und KI-Unterstützung in einer operativen Ebene.",
+agent:"AgentStation und AgentStation Factory untersuchen koordinierte KI-Arbeitskräfte, spezialisierte Agenten, Tool-Register, Artefakte, isolierte Workspaces und dauerhafte Ausführung.",
+stack:"Der technische Stack umfasst TypeScript, JavaScript, Python, React, Next.js, Node.js, FastAPI, Express, PostgreSQL, SQLite, Docker, GitHub Actions, KI-Agenten, RAG und Tool Calling.",
+fallback:"Das Portfolio konzentriert sich auf KI-native Systeme, Automatisierung und Product Engineering. Frage nach OAE, ClinicOS, NSOS, AgentStation, Nachweisen oder dem technischen Stack."
+}
+};
+function answerQuestion(q){
+ const lang=localStorage.getItem("portfolio-language")||"en";
+ const a=assistantLocales[lang]||assistantLocales.en;
+ const hit=answers.find(([re])=>re.test(q));
+ if(hit){const k=hit[0].source||"";return hit[1]}
+ if(/healthcare|clinic|medical|santé|clinica|gesund|salud/i.test(q))return a.health;
+ if(/oae|autonomous|engineering project|autonome|ingegneria|ingenieur/i.test(q))return a.oae;
+ if(/evidence|test|serious|proof|preuve|evidenz|nachweis/i.test(q))return a.evidence;
+ if(/school|education|nsos|école|éducation|scuola|schule/i.test(q))return a.school;
+ if(/agent|ai|ia|ki/i.test(q))return a.agent;
+ if(/stack|technology|tech|technologie|tecnologia|technologie/i.test(q))return a.stack;
+ return a.fallback;
+}
 const askInput=document.getElementById("askInput"),askBtn=document.getElementById("askBtn"),askOutput=document.getElementById("askOutput");
 function ask(){const q=askInput?.value.trim();if(!q)return;askOutput.innerHTML="<strong>Answer</strong><br>"+answerQuestion(q)}
 askBtn?.addEventListener("click",ask);askInput?.addEventListener("keydown",e=>{if(e.key==="Enter")ask()});document.querySelectorAll(".promptchip").forEach(b=>b.addEventListener("click",()=>{askInput.value=b.textContent;ask()}));
