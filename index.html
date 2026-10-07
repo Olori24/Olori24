@@ -28,10 +28,12 @@ footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var
 .log{grid-column:span 6}.log time{font:500 11px 'DM Mono',monospace;color:var(--mint)}.log h3{margin:10px 0 6px;font-size:20px}.log p{color:var(--muted);margin:0}.log .checks{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.check{font:500 10px 'DM Mono',monospace;padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:#a9bbb2}.check::first-letter{color:var(--mint)}
 .stack{grid-column:span 4}.stack h3{margin-top:0}.stack p{color:var(--muted);font-size:13px}.stack .chips{margin-top:14px}
 .timeline{position:relative;border-left:1px solid #294538;margin-left:10px;padding-left:28px}.timeline .event{position:relative;padding:0 0 30px}.timeline .event::before{content:"";position:absolute;left:-34px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px var(--bg);border:1px solid #2e624c}.timeline time{font:500 11px 'DM Mono',monospace;color:var(--mint)}.timeline h3{margin:5px 0}.timeline p{margin:0;color:var(--muted);max-width:700px}
+.ai-panel{margin-top:20px;border:1px solid #28533f;border-radius:22px;background:linear-gradient(145deg,#0d2118,#08130e);overflow:hidden}.ai-top{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.ai-title{font:500 11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--mint)}.ai-live{font:500 10px 'DM Mono',monospace;color:#91a39a}.ai-live i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--mint);margin-right:6px}.ai-body{padding:18px}.ai-input{display:flex;gap:10px}.ai-input input{flex:1;min-width:0;background:#07110c;color:var(--text);border:1px solid var(--line);border-radius:13px;padding:13px 14px;outline:none;font:14px Inter}.ai-input input:focus{border-color:#39745c}.ai-output{min-height:92px;margin-top:14px;padding:15px;border-radius:14px;background:#07110c;border:1px solid var(--line);color:#b7c5bd;font-size:13px}.ai-output strong{color:var(--text)}.promptchips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.promptchip{border:1px solid var(--line);background:transparent;color:#91a39a;border-radius:999px;padding:6px 9px;font:500 10px 'DM Mono',monospace;cursor:pointer}.promptchip:hover{border-color:#39745c;color:var(--mint)}
+.security{grid-column:span 6}.security h3{margin-bottom:8px}.security p{color:var(--muted)}.security .chips{margin-top:14px}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap navin"><a class="brand" href="#">BOLAJI<span>.</span></a><nav class="links"><a href="#systems">Systems</a><a href="#evidence">Evidence</a><a href="#case-studies">Case studies</a><a href="#architecture">Architecture</a><a href="#principles">Doctrine</a><a href="#contact">Contact</a></nav></div></header>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#">BOLAJI<span>.</span></a><nav class="links"><a href="#systems">Systems</a><a href="#evidence">Evidence</a><a href="#case-studies">Case studies</a><a href="#assistant">Ask</a><a href="#architecture">Architecture</a><a href="#principles">Doctrine</a><a href="#contact">Contact</a></nav></div></header>
 
 <main>
 <section class="hero"><div class="wrap hero-grid reveal"><div>
@@ -91,6 +93,13 @@ footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var
 <div class="card stack reveal"><span class="tag">Architecture</span><h3>Operating model</h3><p>Reusable patterns across autonomous agents, vertical SaaS and operational platforms.</p><div class="chips"><span class="chip">Multi-tenant</span><span class="chip">Durable jobs</span><span class="chip">Workspaces</span><span class="chip">Recovery</span></div></div>
 </div></div></section>
 
+<section id="assistant"><div class="wrap reveal"><div class="sectionhead"><h2>Ask the portfolio</h2><p>A small demonstration of the same principle behind my AI systems: turn intent into a useful, bounded answer.</p></div><div class="ai-panel"><div class="ai-top"><span class="ai-title">Bolaji engineering assistant</span><span class="ai-live"><i></i>local portfolio mode</span></div><div class="ai-body"><div class="ai-input"><input id="askInput" placeholder="Ask: What is your strongest engineering project?" autocomplete="off"><button class="btn primary" id="askBtn">Ask</button></div><div class="promptchips"><button class="promptchip">What have you built in healthcare?</button><button class="promptchip">What makes OAE different?</button><button class="promptchip">Show me the engineering evidence.</button></div><div class="ai-output" id="askOutput"><strong>Try a question.</strong> This demo answers from the portfolio's verified content. It does not pretend to know information that is not here.</div></div></div></div></section>
+
+<section id="security"><div class="wrap"><div class="sectionhead reveal"><h2>Security & reliability</h2><p>Production systems need boundaries. These are recurring controls across the work.</p></div><div class="grid">
+<div class="card security reveal"><span class="tag">Security</span><h3>Authority has boundaries</h3><p>Permissions, tenant isolation and auditability are treated as architecture concerns, not afterthoughts.</p><div class="chips"><span class="chip">RBAC</span><span class="chip">MFA</span><span class="chip">Authorization</span><span class="chip">Tenant isolation</span><span class="chip">Audit trails</span></div></div>
+<div class="card security reveal"><span class="tag">Reliability</span><h3>Failure is part of the design</h3><p>Retries, durable jobs, health checks, recovery paths and real-browser verification are part of the delivery model.</p><div class="chips"><span class="chip">Retries</span><span class="chip">Idempotency</span><span class="chip">Recovery</span><span class="chip">E2E</span><span class="chip">CI/CD</span></div></div>
+</div></div></section>
+
 <section id="timeline"><div class="wrap reveal"><div class="sectionhead"><h2>Engineering path</h2><p>A transition from field systems and public health into software, automation and AI-native product engineering.</p></div><div class="timeline">
 <div class="event"><time>2023–2024</time><h3>Field systems & public health</h3><p>Environmental health, sanitation, safety inspection and operational research built the foundation for thinking about systems in the real world.</p></div>
 <div class="event"><time>2024–2025</time><h3>Software engineering transition</h3><p>Moved into application engineering, automation and developer tooling with a focus on practical systems rather than isolated demos.</p></div>
@@ -123,6 +132,19 @@ install?.addEventListener("click",async()=>{
  alert("To install: open this portfolio in Chrome, tap the browser menu ⋮, then choose “Install app” or “Add to Home screen”.");
 });
 window.addEventListener("appinstalled",()=>{install.textContent="App installed ✓";install.disabled=true});
+
+const answers=[
+ [/healthcare|clinic|medical/i,"ClinicOS is the strongest healthcare example: a multi-tenant clinic operating system covering clinical workflows, laboratory, pharmacy, billing, inventory, staff, security and audit. Its latest verified baseline reached 603+ tests, 41 real Chromium E2E tests and 21/21 smoke checks."],
+ [/oae|autonomous|engineering project/i,"OAE Core is the flagship infrastructure project. Its thesis is governed autonomous software engineering: understand intent, inspect context, plan, execute through controlled tools, verify results and preserve evidence while keeping humans in control."],
+ [/evidence|test|serious|proof/i,"The portfolio currently documents 603+ ClinicOS tests, 41 real Chromium E2E tests and 21/21 smoke checks, alongside production repositories, build history and explicit verification practices."],
+ [/school|education|nsos/i,"NSOS is the Nigeria-first school operating system. It brings administration, learning, communication, payments and AI assistance into one operational layer for learning institutions."],
+ [/agent|ai/i,"AgentStation and AgentStation Factory explore coordinated AI workforces, specialist agents, tool registries, artifacts, sandboxed workspaces and durable execution."],
+ [/stack|technology|tech/i,"The core technical surface includes TypeScript, JavaScript, Python, React, Next.js, Node.js, FastAPI, Express, PostgreSQL, SQLite, Docker, GitHub Actions, AI agents, RAG and tool calling."]
+];
+function answerQuestion(q){const hit=answers.find(([re])=>re.test(q));return hit?hit[1]:"The portfolio is focused on AI-native systems, automation and product engineering. Try asking about OAE, ClinicOS, NSOS, AgentStation, engineering evidence or the technical stack."}
+const askInput=document.getElementById("askInput"),askBtn=document.getElementById("askBtn"),askOutput=document.getElementById("askOutput");
+function ask(){const q=askInput?.value.trim();if(!q)return;askOutput.innerHTML="<strong>Answer</strong><br>"+answerQuestion(q)}
+askBtn?.addEventListener("click",ask);askInput?.addEventListener("keydown",e=>{if(e.key==="Enter")ask()});document.querySelectorAll(".promptchip").forEach(b=>b.addEventListener("click",()=>{askInput.value=b.textContent;ask()}));
 if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}));
 </script>
 </body></html>
