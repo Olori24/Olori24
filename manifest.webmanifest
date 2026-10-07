@@ -1,0 +1,15 @@
+{
+  "name":"Bolaji Akande | AI Systems Builder",
+  "short_name":"Bolaji Akande",
+  "description":"Bolaji Akande's AI systems, engineering portfolio and projects.",
+  "start_url":"/",
+  "scope":"/",
+  "display":"standalone",
+  "background_color":"#06100c",
+  "theme_color":"#06100c",
+  "orientation":"portrait-primary",
+  "icons":[
+    {"src":"https://github.com/Olori24.png?size=192","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"https://github.com/Olori24.png?size=512","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
