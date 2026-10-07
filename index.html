@@ -31,7 +31,7 @@ footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var
 <div class="eyebrow">AI systems · automation · product engineering</div>
 <h1>I build software that can <em>do the work.</em></h1>
 <p class="lead">I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.</p>
-<div class="actions"><button class="btn primary" id="installApp" hidden>Install app ↓</button><a class="btn" href="#systems">Explore the systems ↓</a><a class="btn" href="Bolaji-Akande-Profile.html" download>Download profile ↓</a><a class="btn" href="https://github.com/Olori24" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div><img class="portrait" src="https://github.com/Olori24.png?size=800" alt="Bolaji Akande"></div>
+<div class="actions"><button class="btn primary" id="installApp">Install app ↓</button><a class="btn" href="#systems">Explore the systems ↓</a><a class="btn" href="Bolaji-Akande-Profile.html" download>Download profile ↓</a><a class="btn" href="https://github.com/Olori24" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div><img class="portrait" src="https://github.com/Olori24.png?size=800" alt="Bolaji Akande"></div>
 </div></section>
 
 <section><div class="wrap grid reveal">
@@ -70,6 +70,14 @@ footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
-const install=document.getElementById("installApp");let deferredPrompt=null;window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;install.hidden=false});install?.addEventListener("click",async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;install.hidden=true});if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js"));
+const install=document.getElementById("installApp");let deferredPrompt=null;
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;install.hidden=false});
+install?.addEventListener("click",async()=>{
+ if(deferredPrompt){deferredPrompt.prompt();const choice=await deferredPrompt.userChoice;deferredPrompt=null;if(choice.outcome==="accepted")install.textContent="App installed ✓";else install.textContent="Install app ↓";return}
+ if(window.matchMedia("(display-mode: standalone)").matches||window.navigator.standalone){install.textContent="App already installed ✓";return}
+ alert("To install: open this portfolio in Chrome, tap the browser menu ⋮, then choose “Install app” or “Add to Home screen”.");
+});
+window.addEventListener("appinstalled",()=>{install.textContent="App installed ✓";install.disabled=true});
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}));
 </script>
 </body></html>
