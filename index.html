@@ -381,9 +381,7 @@ fallback:"Das Portfolio konzentriert sich auf KI-native Systeme, Automatisierung
 function answerQuestion(q){
  const lang=localStorage.getItem("portfolio-language")||"en";
  const a=assistantLocales[lang]||assistantLocales.en;
- const hit=answers.find(([re])=>re.test(q));
- if(hit){const k=hit[0].source||"";return hit[1]}
- if(/healthcare|clinic|medical|santé|clinica|gesund|salud/i.test(q))return a.health;
+ if(/healthcare|clinic|medical|santé|clinique|clinica|sanità|gesund|gesundheit|salud/i.test(q))return a.health;
  if(/oae|autonomous|engineering project|autonome|ingegneria|ingenieur/i.test(q))return a.oae;
  if(/evidence|test|serious|proof|preuve|evidenz|nachweis/i.test(q))return a.evidence;
  if(/school|education|nsos|école|éducation|scuola|schule/i.test(q))return a.school;
