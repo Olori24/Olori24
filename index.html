@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07100d">
+<meta name="theme-color" content="#06100c"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="/manifest.webmanifest">
 <meta name="description" content="Bolaji Akande — AI Systems Builder, Automation Engineer and Product Engineer.">
 <title>Bolaji Akande — AI Systems Builder</title>
 <style>
@@ -31,7 +31,7 @@ footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var
 <div class="eyebrow">AI systems · automation · product engineering</div>
 <h1>I build software that can <em>do the work.</em></h1>
 <p class="lead">I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.</p>
-<div class="actions"><a class="btn primary" href="#systems">Explore the systems ↓</a><a class="btn" href="Bolaji-Akande-Profile.html" download>Download profile ↓</a><a class="btn" href="https://github.com/Olori24" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div><img class="portrait" src="https://github.com/Olori24.png?size=800" alt="Bolaji Akande"></div>
+<div class="actions"><button class="btn primary" id="installApp" hidden>Install app ↓</button><a class="btn" href="#systems">Explore the systems ↓</a><a class="btn" href="Bolaji-Akande-Profile.html" download>Download profile ↓</a><a class="btn" href="https://github.com/Olori24" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div><img class="portrait" src="https://github.com/Olori24.png?size=800" alt="Bolaji Akande"></div>
 </div></section>
 
 <section><div class="wrap grid reveal">
@@ -70,5 +70,6 @@ footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const install=document.getElementById("installApp");let deferredPrompt=null;window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;install.hidden=false});install?.addEventListener("click",async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;install.hidden=true});if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js"));
 </script>
 </body></html>
