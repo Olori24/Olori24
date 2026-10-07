@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07100d">
+<meta name="description" content="Bolaji Akande — AI Systems Builder, Automation Engineer and Product Engineer.">
+<title>Bolaji Akande — AI Systems Builder</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#06100c;--panel:#0b1712;--panel2:#0e1e17;--text:#f3f7f4;--muted:#91a39a;--line:#1b3027;--mint:#72f2bd;--mint2:#b7ffe0;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#123526 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 24px}.nav{position:sticky;top:0;z-index:20;background:#06100cd9;backdrop-filter:blur(18px);border-bottom:1px solid #183026}.navin{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.03em}.brand span{color:var(--mint)}.links{display:flex;gap:25px;font-size:13px;color:var(--muted)}.links a:hover{color:var(--text)}
+.hero{padding:112px 0 92px;position:relative;overflow:hidden}.eyebrow{font:500 12px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.14em;color:var(--mint)}h1{font-size:clamp(52px,9vw,108px);line-height:.93;letter-spacing:-.07em;max-width:980px;margin:18px 0 28px}h1 em{font-style:normal;color:var(--mint)}.lead{max-width:720px;color:#b7c5bd;font-size:19px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn{padding:13px 18px;border:1px solid var(--line);border-radius:999px;background:#0b1712;font-weight:600;font-size:14px}.btn.primary{background:var(--mint);color:#06100c;border-color:var(--mint)}.btn:hover{transform:translateY(-1px)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.stat{grid-column:span 3;border-top:1px solid var(--line);padding-top:18px}.stat b{font-size:25px}.stat small{display:block;color:var(--muted);margin-top:4px}
+section{padding:92px 0}.sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.sectionhead h2{font-size:38px;letter-spacing:-.05em;margin:0}.sectionhead p{color:var(--muted);max-width:520px;margin:0}
+.card{background:linear-gradient(145deg,#0d1d16,#09130f);border:1px solid var(--line);border-radius:22px;padding:28px;transition:.25s;position:relative;overflow:hidden}.card:hover{border-color:#2b5543;transform:translateY(-3px)}.project{grid-column:span 6;min-height:300px}.project.feature{grid-column:span 12;min-height:390px;background:radial-gradient(circle at 90% 10%,#164633 0,transparent 40%),linear-gradient(145deg,#0d2118,#09130f)}.tag{font:500 11px 'DM Mono',monospace;color:var(--mint);text-transform:uppercase;letter-spacing:.1em}.project h3{font-size:30px;letter-spacing:-.04em;margin:12px 0 8px}.project p{color:var(--muted);max-width:640px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}.chip{font-size:11px;color:#b7c8bf;border:1px solid var(--line);border-radius:999px;padding:5px 9px}.arrow{position:absolute;right:26px;top:25px;color:var(--mint);font-size:22px}
+.principles{grid-column:span 3}.principles h3{font-size:17px}.principles p{color:var(--muted);font-size:14px}
+.arch{border:1px solid var(--line);border-radius:24px;padding:30px;background:#08130e}.flow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px}.node{padding:12px 15px;border:1px solid #254438;border-radius:12px;background:#0d1b15;font:500 12px 'DM Mono',monospace}.node.hot{color:var(--mint);border-color:#39745c}
+.cta{padding:55px;border-radius:26px;border:1px solid #28533f;background:radial-gradient(circle at 80% 0,#194b37,transparent 45%),#0a1711}.cta h2{font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-.06em;margin:0 0 16px}.cta p{color:var(--muted);max-width:650px}
+footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var(--line)}footer .foot{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(15px);transition:.7s}.reveal.on{opacity:1;transform:none}
+@media(max-width:760px){.links{display:none}.hero{padding:75px 0}.lead{font-size:17px}.stat{grid-column:span 6}.project,.project.feature,.principles{grid-column:span 12}.sectionhead{display:block}.sectionhead p{margin-top:10px}.cta{padding:30px}.flow{justify-content:flex-start}footer .foot{display:block}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#">BOLAJI<span>.</span></a><nav class="links"><a href="#systems">Systems</a><a href="#architecture">Architecture</a><a href="#principles">Doctrine</a><a href="#contact">Contact</a></nav></div></header>
+
+<main>
+<section class="hero"><div class="wrap reveal">
+<div class="eyebrow">AI systems · automation · product engineering</div>
+<h1>I build software that can <em>do the work.</em></h1>
+<p class="lead">I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.</p>
+<div class="actions"><a class="btn primary" href="#systems">Explore the systems ↓</a><a class="btn" href="https://github.com/Olori24" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+</div></section>
+
+<section><div class="wrap grid reveal">
+<div class="stat"><b>AI-native</b><small>Products built around intelligence, not chat alone.</small></div>
+<div class="stat"><b>Operations-first</b><small>Real workflows, permissions, persistence and recovery.</small></div>
+<div class="stat"><b>Evidence-led</b><small>Source, architecture, tests and observable state.</small></div>
+<div class="stat"><b>Africa-aware</b><small>Systems designed for practical regional realities.</small></div>
+</div></section>
+
+<section id="systems"><div class="wrap"><div class="sectionhead reveal"><h2>Selected systems</h2><p>A connected portfolio of infrastructure and vertical operating systems. Each project is a working engineering thesis.</p></div>
+<div class="grid">
+<a class="card project feature reveal" href="https://github.com/Olori24/oae-core" target="_blank"><span class="arrow">↗</span><div class="tag">01 · flagship infrastructure</div><h3>OAE Core</h3><p>A governed engineering control plane for repositories, workspaces, jobs and controlled execution. The foundation for autonomous software engineering.</p><div class="chips"><span class="chip">Authorization</span><span class="chip">Durable jobs</span><span class="chip">Workspace lifecycle</span><span class="chip">Auditability</span><span class="chip">Controlled execution</span></div></a>
+<a class="card project reveal" href="https://github.com/Olori24/AgentStation" target="_blank"><span class="arrow">↗</span><div class="tag">02 · autonomous engineering</div><h3>AgentStation</h3><p>Mission decomposition, specialist agents, artifact generation and verification inside an engineering workspace.</p><div class="chips"><span class="chip">Multi-agent</span><span class="chip">QA</span><span class="chip">Artifacts</span></div></a>
+<a class="card project reveal" href="https://github.com/Olori24/AgentStation-Factory" target="_blank"><span class="arrow">↗</span><div class="tag">03 · AI workforce</div><h3>AgentStation Factory</h3><p>Coordinated AI workforces with durable execution, skills, tools, sandboxed workspaces and mission artifacts.</p><div class="chips"><span class="chip">AgentRouter</span><span class="chip">Tool registry</span><span class="chip">Sandboxing</span></div></a>
+<a class="card project reveal" href="https://github.com/Olori24/nsos-nigerian-school-operating-system-nigerian-school-operating-system" target="_blank"><span class="arrow">↗</span><div class="tag">04 · education OS</div><h3>NSOS</h3><p>A Nigeria-first operating system for schools and learning institutions, combining people, learning, administration, communication and payments.</p><div class="chips"><span class="chip">Multi-tenant</span><span class="chip">Learning</span><span class="chip">Payments</span></div></a>
+<a class="card project reveal" href="https://github.com/Olori24/Ai-Clinic-Management-System" target="_blank"><span class="arrow">↗</span><div class="tag">05 · healthcare OS</div><h3>ClinicOS</h3><p>AI-powered clinic operations across patients, encounters, laboratory, pharmacy, billing, inventory, staff, security and audit.</p><div class="chips"><span class="chip">RBAC</span><span class="chip">MFA</span><span class="chip">Clinical workflows</span></div></a>
+<a class="card project reveal" href="https://github.com/Olori24/Business-Operating-System-" target="_blank"><span class="arrow">↗</span><div class="tag">06 · business OS</div><h3>Business OS</h3><p>A programmable operating layer for modern businesses with durable workflows, integrations and operational dashboards.</p><div class="chips"><span class="chip">Workflows</span><span class="chip">Integrations</span><span class="chip">SaaS</span></div></a>
+<a class="card project reveal" href="https://github.com/Olori24/NSMS" target="_blank"><span class="arrow">↗</span><div class="tag">07 · community operations</div><h3>NSMS</h3><p>Incident coordination connecting residents, operators and authorized responders with evidence, timelines and audit trails.</p><div class="chips"><span class="chip">Incidents</span><span class="chip">Evidence</span><span class="chip">Notifications</span></div></a>
+<a class="card project reveal" href="https://github.com/Olori24/opportunity-radar-africa" target="_blank"><span class="arrow">↗</span><div class="tag">08 · intelligence</div><h3>Opportunity Radar Africa</h3><p>Opportunity intelligence for grants, tenders, procurement, scholarships, fellowships and funding.</p><div class="chips"><span class="chip">Ingestion</span><span class="chip">Scoring</span><span class="chip">Recommendations</span></div></a>
+</div></div></section>
+
+<section id="architecture"><div class="wrap reveal"><div class="sectionhead"><h2>The architecture</h2><p>The recurring design pattern across the portfolio is governed execution from human intent to useful outcome.</p></div><div class="arch"><div class="flow">
+<span class="node hot">HUMAN GOAL</span><span>→</span><span class="node">CONTEXT</span><span>→</span><span class="node">PLAN</span><span>→</span><span class="node hot">EXECUTE</span><span>→</span><span class="node">VERIFY</span><span>→</span><span class="node">PERSIST</span><span>→</span><span class="node">OBSERVE</span><span>→</span><span class="node">RECOVER</span><span>→</span><span class="node">AUDIT</span><span>→</span><span class="node hot">OUTCOME</span>
+</div></div></div></section>
+
+<section id="principles"><div class="wrap"><div class="sectionhead reveal"><h2>Engineering doctrine</h2><p>Automation should increase capability without making the system opaque or uncontrollable.</p></div><div class="grid">
+<div class="card principles reveal"><span class="tag">01</span><h3>Human authority</h3><p>Automation expands capability. It does not silently take authority that belongs to people.</p></div>
+<div class="card principles reveal"><span class="tag">02</span><h3>Evidence before claims</h3><p>Prefer observable state, tests, audit records and reproducible outputs over vanity metrics.</p></div>
+<div class="card principles reveal"><span class="tag">03</span><h3>Durable execution</h3><p>Important work should survive retries, restarts, failures and partial completion.</p></div>
+<div class="card principles reveal"><span class="tag">04</span><h3>Verification is completion</h3><p>Generated is not the same as finished. Build, test, inspect and verify.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap reveal"><div class="cta"><div class="tag">Let's build</div><h2>Complicated problem?<br>Build the system.</h2><p>Open to AI-native products, agent infrastructure, automation, SaaS, developer tools and operational software.</p><div class="actions"><a class="btn primary" href="https://github.com/Olori24" target="_blank" rel="noreferrer">View GitHub ↗</a><a class="btn" href="mailto:hello@olori.dev">Start a conversation</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Bolaji Akande</span><span>BUILD SYSTEMS · AUTOMATE THE WORK · KEEP HUMANS IN CONTROL</span></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+</body></html>
