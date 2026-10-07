@@ -28,12 +28,12 @@ footer{padding:35px 0 55px;color:#718279;font-size:12px;border-top:1px solid var
 .log{grid-column:span 6}.log time{font:500 11px 'DM Mono',monospace;color:var(--mint)}.log h3{margin:10px 0 6px;font-size:20px}.log p{color:var(--muted);margin:0}.log .checks{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.check{font:500 10px 'DM Mono',monospace;padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:#a9bbb2}.check::first-letter{color:var(--mint)}
 .stack{grid-column:span 4}.stack h3{margin-top:0}.stack p{color:var(--muted);font-size:13px}.stack .chips{margin-top:14px}
 .timeline{position:relative;border-left:1px solid #294538;margin-left:10px;padding-left:28px}.timeline .event{position:relative;padding:0 0 30px}.timeline .event::before{content:"";position:absolute;left:-34px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px var(--bg);border:1px solid #2e624c}.timeline time{font:500 11px 'DM Mono',monospace;color:var(--mint)}.timeline h3{margin:5px 0}.timeline p{margin:0;color:var(--muted);max-width:700px}
-.ai-panel{margin-top:20px;border:1px solid #28533f;border-radius:22px;background:linear-gradient(145deg,#0d2118,#08130e);overflow:hidden}.ai-top{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.ai-title{font:500 11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--mint)}.ai-live{font:500 10px 'DM Mono',monospace;color:#91a39a}.ai-live i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--mint);margin-right:6px}.ai-body{padding:18px}.ai-input{display:flex;gap:10px}.ai-input input{flex:1;min-width:0;background:#07110c;color:var(--text);border:1px solid var(--line);border-radius:13px;padding:13px 14px;outline:none;font:14px Inter}.ai-input input:focus{border-color:#39745c}.ai-output{min-height:92px;margin-top:14px;padding:15px;border-radius:14px;background:#07110c;border:1px solid var(--line);color:#b7c5bd;font-size:13px}.ai-output strong{color:var(--text)}.promptchips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.promptchip{border:1px solid var(--line);background:transparent;color:#91a39a;border-radius:999px;padding:6px 9px;font:500 10px 'DM Mono',monospace;cursor:pointer}.promptchip:hover{border-color:#39745c;color:var(--mint)}
+.ai-panel{margin-top:20px;border:1px solid #28533f;border-radius:22px;background:linear-gradient(145deg,#0d2118,#08130e);overflow:hidden}.ai-top{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.ai-title{font:500 11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--mint)}.ai-live{font:500 10px 'DM Mono',monospace;color:#91a39a}.ai-live i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--mint);margin-right:6px}.ai-body{padding:18px}.ai-input{display:flex;gap:10px}.ai-input input{flex:1;min-width:0;background:#07110c;color:var(--text);border:1px solid var(--line);border-radius:13px;padding:13px 14px;outline:none;font:14px Inter}.ai-input input:focus{border-color:#39745c}.ai-output{min-height:92px;margin-top:14px;padding:15px;border-radius:14px;background:#07110c;border:1px solid var(--line);color:#b7c5bd;font-size:13px}.ai-output strong{color:var(--text)}.lang-picker{position:relative}.lang-picker select{appearance:none;background:#08130e;color:#dce8e1;border:1px solid var(--line);border-radius:999px;padding:8px 30px 8px 11px;font:500 10px 'DM Mono',monospace;cursor:pointer;outline:none}.lang-picker:after{content:"⌄";position:absolute;right:11px;top:6px;color:#91a39a;pointer-events:none}.promptchips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.promptchip{border:1px solid var(--line);background:transparent;color:#91a39a;border-radius:999px;padding:6px 9px;font:500 10px 'DM Mono',monospace;cursor:pointer}.promptchip:hover{border-color:#39745c;color:var(--mint)}
 .security{grid-column:span 6}.security h3{margin-bottom:8px}.security p{color:var(--muted)}.security .chips{margin-top:14px}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap navin"><a class="brand" href="#">BOLAJI<span>.</span></a><nav class="links"><a href="#systems">Systems</a><a href="#evidence">Evidence</a><a href="#case-studies">Case studies</a><a href="#assistant">Ask</a><a href="#architecture">Architecture</a><a href="#principles">Doctrine</a><a href="#contact">Contact</a></nav></div></header>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#">BOLAJI<span>.</span></a><nav class="links"><a href="#systems">Systems</a><a href="#evidence">Evidence</a><a href="#case-studies">Case studies</a><a href="#assistant">Ask</a><a href="#architecture">Architecture</a><a href="#principles">Doctrine</a><a href="#contact">Contact</a><span class="lang-picker"><select id="languagePicker" aria-label="Choose language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="pt">PT</option><option value="ar">عربي</option><option value="yo">YO</option></select></span></nav></div></header>
 
 <main>
 <section class="hero"><div class="wrap hero-grid reveal"><div>
@@ -132,6 +132,63 @@ install?.addEventListener("click",async()=>{
  alert("To install: open this portfolio in Chrome, tap the browser menu ⋮, then choose “Install app” or “Add to Home screen”.");
 });
 window.addEventListener("appinstalled",()=>{install.textContent="App installed ✓";install.disabled=true});
+
+
+const translations={
+fr:{
+"Systems":"Systèmes","Evidence":"Preuves","Case studies":"Études de cas","Ask":"Demander","Architecture":"Architecture","Doctrine":"Doctrine","Contact":"Contact",
+"I build software that can do the work.":"Je construis des logiciels capables de faire le travail.",
+"I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.":"Je conçois des systèmes natifs de l’IA capables de planifier, exécuter, vérifier et piloter de vrais workflows. L’objectif est une autonomie utile sans perdre le contrôle, les preuves ni la responsabilité.",
+"Install app ↓":"Installer l’application ↓","Explore the systems ↓":"Explorer les systèmes ↓","Download profile ↓":"Télécharger le profil ↓","GitHub ↗":"GitHub ↗",
+"Selected systems":"Systèmes sélectionnés","Engineering evidence":"Preuves d’ingénierie","Engineering status":"État des systèmes","Engineering case studies":"Études de cas d’ingénierie","Build log":"Journal de construction","Technical surface":"Surface technique","Ask the portfolio":"Interroger le portfolio","Security & reliability":"Sécurité et fiabilité","Engineering path":"Parcours d’ingénierie","The architecture":"L’architecture","Engineering doctrine":"Doctrine d’ingénierie","Let's build":"Construisons",
+"local portfolio mode":"mode portfolio local","Ask":"Demander","Try a question.":"Essayez une question.","Read case studies ↓":"Lire les études de cas ↓","Download my profile":"Télécharger mon profil",
+},
+es:{
+"Systems":"Sistemas","Evidence":"Evidencia","Case studies":"Casos de estudio","Ask":"Preguntar","Architecture":"Arquitectura","Doctrine":"Doctrina","Contact":"Contacto",
+"I build software that can do the work.":"Construyo software que puede hacer el trabajo.",
+"I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.":"Diseño y construyo sistemas nativos de IA capaces de planificar, ejecutar, verificar y operar flujos de trabajo reales. El objetivo es una autonomía útil sin perder control, evidencia ni responsabilidad.",
+"Install app ↓":"Instalar aplicación ↓","Explore the systems ↓":"Explorar sistemas ↓","Download profile ↓":"Descargar perfil ↓","GitHub ↗":"GitHub ↗",
+"Selected systems":"Sistemas seleccionados","Engineering evidence":"Evidencia de ingeniería","Engineering status":"Estado de ingeniería","Engineering case studies":"Casos de ingeniería","Build log":"Registro de construcción","Technical surface":"Superficie técnica","Ask the portfolio":"Preguntar al portfolio","Security & reliability":"Seguridad y fiabilidad","Engineering path":"Trayectoria de ingeniería","The architecture":"La arquitectura","Engineering doctrine":"Doctrina de ingeniería","Let's build":"Construyamos",
+"local portfolio mode":"modo portfolio local","Try a question.":"Prueba una pregunta.","Read case studies ↓":"Leer casos de estudio ↓","Download my profile":"Descargar mi perfil",
+},
+pt:{
+"Systems":"Sistemas","Evidence":"Evidências","Case studies":"Casos de estudo","Ask":"Perguntar","Architecture":"Arquitetura","Doctrine":"Doutrina","Contact":"Contato",
+"I build software that can do the work.":"Eu construo software que consegue fazer o trabalho.",
+"I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.":"Projeto e construo sistemas nativos de IA capazes de planejar, executar, verificar e operar fluxos reais. O objetivo é autonomia útil sem perder controle, evidências ou responsabilidade.",
+"Install app ↓":"Instalar aplicativo ↓","Explore the systems ↓":"Explorar sistemas ↓","Download profile ↓":"Baixar perfil ↓","GitHub ↗":"GitHub ↗",
+"Selected systems":"Sistemas selecionados","Engineering evidence":"Evidências de engenharia","Engineering status":"Status de engenharia","Engineering case studies":"Casos de engenharia","Build log":"Registro de construção","Technical surface":"Superfície técnica","Ask the portfolio":"Perguntar ao portfólio","Security & reliability":"Segurança e confiabilidade","Engineering path":"Trajetória de engenharia","The architecture":"A arquitetura","Engineering doctrine":"Doutrina de engenharia","Let's build":"Vamos construir",
+"local portfolio mode":"modo portfólio local","Try a question.":"Experimente uma pergunta.","Read case studies ↓":"Ler casos de estudo ↓","Download my profile":"Baixar meu perfil",
+},
+ar:{
+"Systems":"الأنظمة","Evidence":"الأدلة","Case studies":"دراسات الحالة","Ask":"اسأل","Architecture":"الهندسة المعمارية","Doctrine":"المبادئ","Contact":"تواصل",
+"I build software that can do the work.":"أبني برمجيات قادرة على إنجاز العمل.",
+"I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.":"أصمم وأبني أنظمة أصلية للذكاء الاصطناعي تخطط وتنفذ وتتحقق وتدير سير العمل الحقيقي. الهدف هو الاستقلالية المفيدة دون فقدان التحكم أو الأدلة أو المساءلة.",
+"Install app ↓":"تثبيت التطبيق ↓","Explore the systems ↓":"استكشف الأنظمة ↓","Download profile ↓":"تنزيل الملف ↓","GitHub ↗":"GitHub ↗",
+"Selected systems":"الأنظمة المختارة","Engineering evidence":"أدلة هندسية","Engineering status":"حالة الأنظمة","Engineering case studies":"دراسات هندسية","Build log":"سجل البناء","Technical surface":"التقنيات","Ask the portfolio":"اسأل عن الملف","Security & reliability":"الأمان والموثوقية","Engineering path":"المسار الهندسي","The architecture":"البنية المعمارية","Engineering doctrine":"المبادئ الهندسية","Let's build":"لنبنِ",
+"local portfolio mode":"وضع الملف المحلي","Try a question.":"جرّب سؤالاً.","Read case studies ↓":"اقرأ دراسات الحالة ↓","Download my profile":"تنزيل ملفي",
+},
+yo:{
+"Systems":"Àwọn ètò","Evidence":"Ẹ̀rí","Case studies":"Àwọn àpẹẹrẹ iṣẹ́","Ask":"Béèrè","Architecture":"Ìṣètò","Doctrine":"Àwọn ìlànà","Contact":"Kàn sí mi",
+"I build software that can do the work.":"Mo ń kọ sọfitiwia tó lè ṣe iṣẹ́ náà.",
+"I design and build AI-native systems that can plan, execute, verify and operate real workflows. The goal is useful autonomy without losing control, evidence or accountability.":"Mo ń ṣe àwọn ètò sọfitiwia tó dá lórí AI tí ó lè gbero, ṣe, ṣàyẹ̀wò àti ṣiṣẹ́ lórí àwọn iṣẹ́ gidi. Ète ni ìdáṣiṣẹ́ tó wúlò láìpadanu ìṣàkóso, ẹ̀rí àti ojúṣe.",
+"Install app ↓":"Fi app sílò ↓","Explore the systems ↓":"Wo àwọn ètò ↓","Download profile ↓":"Gba profaili ↓","GitHub ↗":"GitHub ↗",
+"Selected systems":"Àwọn ètò tí a yàn","Engineering evidence":"Ẹ̀rí iṣẹ́ ẹ̀rọ","Engineering status":"Ìpo àwọn ètò","Engineering case studies":"Àwọn àpẹẹrẹ iṣẹ́ ẹ̀rọ","Build log":"Ìtàn ìkọ́lé","Technical surface":"Àwọn irinṣẹ́ imọ̀ ẹrọ","Ask the portfolio":"Béèrè nípa portfolio","Security & reliability":"Ààbò àti ìgbẹ́kẹ̀lé","Engineering path":"Ọ̀nà iṣẹ́ ẹ̀rọ","The architecture":"Ìṣètò eto","Engineering doctrine":"Àwọn ìlànà iṣẹ́ ẹ̀rọ","Let's build":"Jẹ́ ká kọ́ ọ",
+"local portfolio mode":"ipo portfolio agbègbè","Try a question.":"Gbìyànjú ìbéèrè kan.","Read case studies ↓":"Ka àwọn àpẹẹrẹ iṣẹ́ ↓","Download my profile":"Gba profaili mi",
+}};
+const langPicker=document.getElementById("languagePicker");
+const baseTexts=new Map();
+document.querySelectorAll("h1,h2,h3,h4,p,a,button,span").forEach(el=>{const t=el.textContent.trim();if(t&&!baseTexts.has(el))baseTexts.set(el,t)});
+function setLanguage(lang){
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ const dict=translations[lang]||{};
+ baseTexts.forEach((original,el)=>{if(dict[original])el.textContent=dict[original]});
+ document.title=lang==="en"?"Bolaji Akande | AI Systems Builder":(dict["I build software that can do the work."]||"Bolaji Akande | AI Systems Builder");
+ localStorage.setItem("portfolio-language",lang);
+}
+const saved=localStorage.getItem("portfolio-language")||"en";
+if(langPicker){langPicker.value=saved;langPicker.addEventListener("change",e=>{location.reload();localStorage.setItem("portfolio-language",e.target.value)})}
+if(saved!=="en")setLanguage(saved);
 
 const answers=[
  [/healthcare|clinic|medical/i,"ClinicOS is the strongest healthcare example: a multi-tenant clinic operating system covering clinical workflows, laboratory, pharmacy, billing, inventory, staff, security and audit. Its latest verified baseline reached 603+ tests, 41 real Chromium E2E tests and 21/21 smoke checks."],
